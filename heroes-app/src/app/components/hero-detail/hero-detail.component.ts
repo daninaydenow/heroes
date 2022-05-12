@@ -10,7 +10,7 @@ import { HeroService } from 'src/app/services/hero.service';
   styleUrls: ['./hero-detail.component.css'],
 })
 export class HeroDetailComponent implements OnInit {
-  @Input() hero?: Hero;
+  hero: Hero | undefined;
   constructor(
     private route: ActivatedRoute,
     private location: Location,
